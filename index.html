@@ -85,7 +85,9 @@
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                     <div class="iconsp">
                      <h4>Location</h4>
-                     <p>Trichy, Tamilnadu</p>
+                     <a href="https://www.google.com/maps?q=Thuraiyur,Trichy" target="_blank">
+                        <p>Trichy, Tamilnadu</p>
+                     </a>
                      </div>
                 </div>
 
@@ -97,7 +99,10 @@
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                     <div class="iconsp">
                      <h4>Email</h4>
-                     <p>keerthyr7@gamil.com</p>
+                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=keerthyr7@gmail.com"  target="_blank">
+                        <p>keerthyr7@gmail.com</p>
+                     </a>
+                     
                      </div>
                 </div>
 
@@ -276,15 +281,17 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit numquam quasi provident dolore ipsam, nam quibusdam! Consequatur fugiat vitae quam.</p>
         </div>
 
-               <form class="inputTag" action="https://formspree.io/f/mwvjypdd" method="POST">
-            <div class="iptags">
-                <input type="text" name="name"  placeholder="Your name">
-                <input type="email" name="email" placeholder="Your email">
+               <form class="inputTag" action="https://formspree.io/f/mwvjypdd" method="POST" id="form">
+            <div class="iptags" >
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" id="email" required>
             </div>
             
-            <textarea name="message id="" placeholder="Type your messages here.."></textarea>
+            <!-- <p id="msg"></p> -->
+            <textarea name="message" placeholder="Type your messages here.." required id="message"></textarea>
+            <p id="msg"></p>
             <div class="footBtn">
-            <button type="submit">Send message</button>
+            <button type="submit" onclick="validation(event)">Send message</button>
             </div>
         </form>
 
@@ -303,9 +310,9 @@ Github
 <div class="socialrow">
 <i class="fa fa-envelope"></i>
 
-<a href="mailto:keerthyr7@gmail.com">
-Email
-</a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=keerthyr7@gmail.com"  target="_blank">
+                <p>keerthyr7@gmail.com</p>
+        </a>
 </div>
 
 
@@ -321,6 +328,7 @@ Email
         </div>
   </footer>
    
+  <script src="script.js"></script>
 
 </body>
 </html>

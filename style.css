@@ -198,6 +198,14 @@ button:hover{
     padding: 1px;
 }
 
+.iconsp a{
+    text-decoration: none;
+}
+
+.iconsp a p{
+    color: white;
+    
+}
 .logoSections{
     display: flex;
     flex-direction: row;
@@ -551,6 +559,9 @@ color:#01c3ca;
     font-weight: bold;
 }
 
+#msg{
+    color: red;
+}
 @media(max-width:1024px){
 
    header{
@@ -657,12 +668,14 @@ color:#01c3ca;
     .leftSideicons,
   .rightSideicons {
     width: 100%;
+     
   }
 
   .icons{
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
+   
   }
   .iconsp h4 {
     font-size: 14px;
@@ -670,7 +683,9 @@ color:#01c3ca;
 
   .iconsp p {
     font-size: 13px;
+   
   }
+  
   .footericons {
     align-items: center;
     text-align: center;
